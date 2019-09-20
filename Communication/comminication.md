@@ -1,4 +1,14 @@
 # 通信規格
+
+## 本の全件取得: /getAll
+
+## 本の1件取得: /getOne
+```json
+{
+    "id": "登録するNFCのID",
+}
+```
+
 ## 本の登録: /register
 ```json
 {
