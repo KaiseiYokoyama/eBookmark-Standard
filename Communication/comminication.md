@@ -53,7 +53,13 @@ HTTP GET Request
 ```
 
 - server to terminal
-Http Status(Jsonによる応答なし)
+    - Http Status(Jsonによる応答なし)
+        - 200 Ok : 登録完了
+            - 201 Createdのほうがいいかも? (検討中)
+                - 登録した本の個別ページに飛ぶ(そこから詳細を入力してもらう)とか
+        - 500 Internal Server Error : サーバーエラー
+            - サーバー側のアクシデントにより, 登録失敗
+
 
 ## 本の削除: /delete
  - terminal to server
@@ -64,7 +70,10 @@ Http Status(Jsonによる応答なし)
 ```
 
 - server to terminal
-Http Status(Jsonによる応答なし)
+    - Http Status(Jsonによる応答なし)
+        - 200 Ok : 削除完了
+        - 500 Internal Server Error : サーバーエラー
+            - サーバー側のアクシデントにより, 削除失敗
 
 ## 本の検索: /search
  - terminal to server
